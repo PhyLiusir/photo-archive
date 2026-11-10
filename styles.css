@@ -600,7 +600,7 @@ figure .cap{padding-inline:0}
 .lb[hidden]{display:none}
 .lb.is-open{opacity:1}
 .lb img{
-  max-width:100%;max-height:calc(100svh - 150px);
+  max-width:100%;max-height:calc(100svh - 112px);
   object-fit:contain;
 }
 .lb__close,.lb__nav{
@@ -613,12 +613,6 @@ figure .cap{padding-inline:0}
 .lb__close{top:22px;right:clamp(16px,4vw,48px)}
 .lb__nav--prev{left:clamp(6px,2vw,26px);top:50%;transform:translateY(-50%)}
 .lb__nav--next{right:clamp(6px,2vw,26px);top:50%;transform:translateY(-50%)}
-.lb__cap{
-  position:absolute;bottom:22px;left:0;right:0;text-align:center;
-  font-size:9.5px;font-weight:500;letter-spacing:.2em;
-  color:rgba(243,240,233,.62);text-transform:uppercase;
-}
-
 /* ---------- 动效 ---------- */
 
 .reveal{

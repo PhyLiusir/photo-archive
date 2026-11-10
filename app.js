@@ -83,16 +83,13 @@
   /* ---------- 灯箱 ---------- */
   const lb = document.getElementById('lb');
   const lbImg = document.getElementById('lb-img');
-  const lbCap = document.getElementById('lb-cap');
 
   const figures = Array.from(document.querySelectorAll('.plate, .about__photo'))
     .filter((fig) => !fig.querySelector('video'))
     .map((fig) => {
       const img = fig.querySelector('img');
       if (!img) return null;
-      const cap = fig.querySelector('figcaption');
-      const alt = img.alt || '';
-      return { el: fig, src: img.getAttribute('src'), alt, cap: cap ? cap.textContent.replace(/\s+/g, ' ').trim() : alt };
+      return { el: fig, src: img.getAttribute('src'), alt: img.alt || '' };
     })
     .filter(Boolean);
 
@@ -104,7 +101,6 @@
     if (!s) return;
     lbImg.src = s.src;
     lbImg.alt = s.alt;
-    lbCap.textContent = s.cap;
   };
   const open = (i) => {
     cursor = i; lastFocus = document.activeElement;
