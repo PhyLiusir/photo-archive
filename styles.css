@@ -613,6 +613,57 @@ figure .cap{padding-inline:0}
 .lb__close{top:22px;right:clamp(16px,4vw,48px)}
 .lb__nav--prev{left:clamp(6px,2vw,26px);top:50%;transform:translateY(-50%)}
 .lb__nav--next{right:clamp(6px,2vw,26px);top:50%;transform:translateY(-50%)}
+/* ---------- 加缪题词：只落在留白里，不解释照片 ---------- */
+.quote{
+  font-family:var(--serif);
+  font-size:clamp(12px,1.02vw,14.5px);
+  line-height:2.2;
+  letter-spacing:.08em;
+  color:var(--ink-3);
+}
+.quote p{margin:0}
+.quote cite{
+  display:block;margin-top:16px;
+  font-family:var(--sans);font-style:normal;
+  font-size:9.5px;font-weight:400;letter-spacing:.14em;
+  color:rgba(23,22,15,.55);
+}
+.quote--hero,.quote--index,.quote--ch{
+  text-align:right;justify-self:end;max-width:310px;
+}
+.quote--hero{padding-bottom:10px}
+.quote--index,.quote--ch{padding-bottom:8px}
+.quote--mid{flex:0 0 auto;width:min(32%,340px)}
+.quote--interlude{
+  text-align:center;max-width:600px;
+  font-size:clamp(16px,1.65vw,23px);
+  line-height:2.4;letter-spacing:.1em;
+}
+.quote--interlude cite{margin-top:30px}
+
+.hero__top,.index__head{
+  display:grid;grid-template-columns:1fr auto;
+  align-items:end;gap:clamp(32px,5vw,72px);
+}
+.ch__head--quote{
+  display:grid;grid-template-columns:1fr auto;
+  align-items:end;gap:clamp(32px,5vw,72px);
+}
+.wrap--mid{
+  display:flex;align-items:center;
+  gap:clamp(36px,5vw,80px);
+}
+.wrap--mid .mid{flex:0 0 min(62%,880px);width:auto}
+
+/* 独立题词页：一整屏留白，只放一句 */
+.interlude{
+  display:flex;align-items:center;justify-content:center;
+  min-height:min(62vh,560px);
+  padding:clamp(90px,15vh,170px) var(--pad);
+  border-top:1px solid var(--line);
+  text-align:center;
+}
+
 /* ---------- 动效 ---------- */
 
 .reveal{
@@ -699,6 +750,15 @@ section[id]{scroll-margin-top:80px}
   /* 窄屏：图版墙统一两列，否则 4 列只剩几十像素 */
   .dense,.dense--stagger{grid-template-columns:repeat(2,1fr)!important}
   .even{grid-template-columns:repeat(2,1fr)}
+  /* 窄屏：题词从侧栏落回正文流 */
+  .hero__top,.index__head,.ch__head--quote{grid-template-columns:1fr;gap:26px}
+  .quote--hero,.quote--index,.quote--ch{
+    text-align:left;justify-self:start;max-width:100%;
+  }
+  .wrap--mid{flex-direction:column;align-items:flex-start;gap:34px}
+  .wrap--mid .mid{flex:none;width:100%}
+  .quote--mid{width:100%;max-width:420px}
+  .interlude{min-height:42vh;padding:80px var(--pad)}
   /* 三联在两列时，末张居中收束成「品」字，避免孤零零靠左 */
   .even .plate:last-child:nth-child(odd){
     grid-column:1/-1;
