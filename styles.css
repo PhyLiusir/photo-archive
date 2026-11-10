@@ -19,7 +19,7 @@
 }
 
 :root{
-  --paper:#F3F0E9;
+  --paper:#F5F2EB;
   --paper-2:#E9E5DA;
   --ink:#17160F;
   --ink-2:#565045;
@@ -39,7 +39,10 @@
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0;
-  background:var(--paper);
+  background-color:var(--paper);
+  background-image:url("assets/textures/canvas.webp");
+  background-size:1024px 1024px;
+  background-repeat:repeat;
   color:var(--ink);
   font-family:var(--sans);
   font-size:16px;
@@ -112,7 +115,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .head.is-solid{
   padding-block:14px;
-  background:rgba(243,240,233,.9);
+  background:rgba(245,242,235,.86);
   backdrop-filter:blur(16px);
   -webkit-backdrop-filter:blur(16px);
   box-shadow:0 1px 0 var(--line);
@@ -207,7 +210,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   position:absolute;
   left:var(--pad);bottom:22px;
   font-size:9.5px;font-weight:500;letter-spacing:.2em;
-  color:rgba(243,240,233,.82);
+  color:rgba(245,242,235,.85);
   text-transform:uppercase;
   text-shadow:0 1px 12px rgba(0,0,0,.5);
 }
