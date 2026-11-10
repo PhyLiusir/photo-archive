@@ -789,6 +789,7 @@ section[id]{scroll-margin-top:80px}
   .quote--side{
     writing-mode:horizontal-tb;text-orientation:mixed;
     padding:0 var(--pad);max-width:420px;grid-row:1;
+    justify-self:start;
     letter-spacing:.06em;line-height:2.0;
   }
   .quote--side p{white-space:normal}
