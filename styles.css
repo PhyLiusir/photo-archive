@@ -55,7 +55,7 @@ img,video{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 h1,h2,h3,p,figure,dl,dd{margin:0}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-::selection{background:var(--accent);color:#F3F0E9}
+::selection{background:var(--accent);color:var(--paper)}
 
 .skip{position:absolute;left:-9999px;top:0;z-index:200;padding:12px 20px;background:var(--ink);color:var(--paper);font-size:13px}
 .skip:focus{left:12px;top:12px}
@@ -88,7 +88,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   font-size:11px;
   line-height:1.6;
   letter-spacing:.04em;
-  color:#6E675C;
+  color:var(--ink-3);
   display:flex;
   gap:10px;
   align-items:baseline;
@@ -553,7 +553,9 @@ figure .cap{padding-inline:0}
   letter-spacing:.02em;
   margin:16px 0 32px;
 }
-.about__text p{
+/* 只作用于"无 class 的纯段落"；否则会盖掉 .label / .about__lead / .about__contact
+   各自的字号与颜色（:not([class]) 让带 class 的段落不匹配） */
+.about__text > p:not([class]){
   font-size:14px;line-height:2.15;letter-spacing:.04em;color:var(--ink-2);
   max-width:540px;margin-bottom:20px;
 }
@@ -567,7 +569,8 @@ figure .cap{padding-inline:0}
   margin-bottom:26px;
 }
 
-.about__contact{
+/* 特异性要压过 .about__text p，否则强调色和字号会被基础段落规则覆盖 */
+.about__text p.about__contact{
   margin-top:30px;
   font-size:11.5px;font-weight:500;letter-spacing:.16em;
   color:var(--accent);
@@ -637,7 +640,7 @@ figure .cap{padding-inline:0}
   display:block;margin-top:22px;
   font-family:var(--sans);font-style:normal;
   font-size:11px;font-weight:400;letter-spacing:.16em;
-  color:rgba(23,22,15,.52);
+  color:var(--ink-3);
 }
 .quote--hero,.quote--index,.quote--ch{
   text-align:right;justify-self:end;max-width:420px;
