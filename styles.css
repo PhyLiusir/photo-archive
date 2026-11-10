@@ -557,6 +557,16 @@ figure .cap{padding-inline:0}
   font-size:14px;line-height:2.15;letter-spacing:.04em;color:var(--ink-2);
   max-width:540px;margin-bottom:20px;
 }
+/* 关于页题句：六个字单独成段，给一点衬线重量 */
+.about__text p.about__lead{
+  font-family:var(--serif);
+  font-size:clamp(15px,1.4vw,18.5px);
+  line-height:1.9;
+  letter-spacing:.12em;
+  color:var(--ink);
+  margin-bottom:26px;
+}
+
 .about__contact{
   margin-top:30px;
   font-size:11.5px;font-weight:500;letter-spacing:.16em;
