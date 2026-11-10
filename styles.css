@@ -442,6 +442,18 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .dense--stagger .plate:nth-child(3n+2){margin-top:clamp(40px,7vh,104px)}
 .dense--stagger .plate:nth-child(3n+3){margin-top:clamp(14px,2.6vh,40px)}
 
+/* 均衡三联：等宽、顶对齐、与大图共用同一条内容轴 */
+.even{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(14px,2vw,26px);
+  margin:clamp(64px,10vh,120px) 0;
+  align-items:start;
+}
+.even .plate{width:100%;margin:0}
+.even .plate__img{width:100%}
+.even img{width:100%;height:auto;display:block}
+
 /* 三张小型，靠左，右侧留白 */
 .trio{
   display:grid;
@@ -692,6 +704,13 @@ section[id]{scroll-margin-top:80px}
 
   /* 窄屏：图版墙统一两列，否则 4 列只剩几十像素 */
   .dense,.dense--stagger{grid-template-columns:repeat(2,1fr)!important}
+  .even{grid-template-columns:repeat(2,1fr)}
+  /* 三联在两列时，末张居中收束成「品」字，避免孤零零靠左 */
+  .even .plate:last-child:nth-child(odd){
+    grid-column:1/-1;
+    width:calc((100% - 14px)/2);
+    margin-inline:auto;
+  }
   .bleed > .plate__img{height:auto}
 }
 
