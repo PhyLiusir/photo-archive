@@ -291,7 +291,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s ease;
   filter:saturate(.92);
 }
-.city:hover .city__thumb img{transform:scale(1.06);filter:saturate(1)}
+.city:hover .city__thumb img{filter:saturate(1)}
 
 .index__foot{
   display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
@@ -383,9 +383,14 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* 满出血 */
 .bleed{margin:clamp(46px,7vh,84px) 0}
+.bleed + .bleed{margin-top:clamp(72px,12vh,150px)}
 .bleed > .plate__img{
   width:100vw;margin-left:calc(50% - 50vw);
-  height:clamp(300px,72vh,760px);
+}
+.bleed > .plate__img img{width:100%;height:auto}
+.bleed > .clipc{
+  width:100vw;margin-left:calc(50% - 50vw);
+  aspect-ratio:16/9;
 }
 .bleed > .wrap > .cap{display:block}
 
@@ -402,8 +407,29 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 }
 .duo--tight{gap:6px;margin:0}
 .duo .plate{display:flex;flex-direction:column}
-.duo .plate__img,
-.duo .clipc{height:clamp(220px,46vh,520px)}
+.duo .plate__img{height:auto}
+.duo .plate__img img{width:100%;height:auto}
+.duo .clipc{aspect-ratio:16/9}
+
+/* 双联：两张并置，整幅出血，均不裁切 */
+.pair{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:6px;
+}
+.pair .plate{margin:0}
+.pair img{width:100%;height:auto;display:block}
+
+/* 密集小图：按设定列数铺满，形成"图版页"，与满出血形成反差 */
+.dense{
+  display:grid;
+  grid-template-columns:repeat(var(--cols,3),1fr);
+  gap:clamp(10px,1.5vw,20px);
+  margin:clamp(44px,7vh,80px) 0;
+  align-items:start;
+}
+.dense .plate{width:100%;margin:0}
+.dense img{width:100%;height:auto}
+.dense .clipc{aspect-ratio:16/9}
 
 /* 三张小型，靠左，右侧留白 */
 .trio{
@@ -424,6 +450,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
   margin:clamp(46px,7vh,84px) 0;
 }
 .quiet .plate{flex:0 0 auto;width:var(--w,300px);margin:0;align-self:flex-end}
+.quiet .clipc{aspect-ratio:16/9}
 .quiet img{width:100%;height:auto}
 
 /* 视频 */
