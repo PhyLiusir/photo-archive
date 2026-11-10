@@ -656,6 +656,29 @@ figure .cap{padding-inline:0}
 }
 .wrap--mid .mid{flex:0 0 min(62%,880px);width:auto}
 
+/* 单侧出血旁的窄条留白：一条侧题词，作为边缘批注 */
+.edge-row{
+  display:grid;
+  grid-template-columns:1fr min(86vw,1240px);
+  align-items:center;
+  margin:clamp(64px,10vh,124px) 0;
+}
+.edge-row .edge{width:100%;margin:0}
+.quote--side{
+  writing-mode:vertical-rl;
+  text-orientation:upright;
+  padding:0 clamp(10px,1.5vw,22px);
+  font-size:clamp(15px,1.15vw,17px);
+  line-height:2.0;
+  letter-spacing:.14em;
+  justify-self:center;
+}
+.quote--side p{white-space:nowrap}
+.quote--side cite{
+  display:block;margin:0 0 0 15px;
+  font-size:10px;letter-spacing:.1em;
+}
+
 /* 独立题词页：一整屏留白，只放一句 */
 .interlude{
   display:flex;align-items:center;justify-content:center;
@@ -760,6 +783,16 @@ section[id]{scroll-margin-top:80px}
   .wrap--mid .mid{flex:none;width:100%}
   .quote--mid{width:100%;max-width:420px}
   .interlude{min-height:42vh;padding:80px var(--pad)}
+  .edge-row{grid-template-columns:1fr;gap:26px}
+  .edge-row .edge{width:min(86vw,1240px);margin-left:0}
+  .edge-row .edge--right{margin-left:auto}
+  .quote--side{
+    writing-mode:horizontal-tb;text-orientation:mixed;
+    padding:0 var(--pad);max-width:420px;grid-row:1;
+    letter-spacing:.06em;line-height:2.0;
+  }
+  .quote--side p{white-space:normal}
+  .quote--side cite{margin:18px 0 0;font-size:10.5px}
   .quote--interlude{font-size:clamp(18px,5vw,21px);letter-spacing:.04em;line-height:2.1}
   .quote--interlude cite{margin-top:26px;font-size:10.5px}
   /* 三联在两列时，末张居中收束成「品」字，避免孤零零靠左 */
