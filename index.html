@@ -5,11 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>光影档案 / LIGHT ARCHIVE — 城市影像档案</title>
 <meta name="description" content="2026 年七月与九月，五座城市，两段旅程。一份仍在生长的私人影像档案。">
-<meta name="theme-color" content="#0B0B0C">
+<meta name="theme-color" content="#F3F0E9">
 <meta property="og:title" content="光影档案 / LIGHT ARCHIVE">
 <meta property="og:description" content="2026 年七月与九月，五座城市，两段旅程。">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/images/dali-IMG_1794.jpg">
+<link rel="preload" href="assets/fonts/serif-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/sans-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,565 +25,551 @@
   <nav class="nav" aria-label="主导航">
     <a href="#part-1">滇西</a>
     <a href="#part-2">沿海</a>
-    <a href="#cities">城市档案</a>
+    <a href="#cities">城市</a>
     <a href="#about">关于</a>
   </nav>
 </header>
 
 <main id="top">
 
-  <!-- 首屏 -->
-  <section class="hero" aria-labelledby="hero-title">
-    <img class="hero__bg" src="assets/images/dali-IMG_1794.jpg" alt="洱海日落，湖面被夕阳染成金色" fetchpriority="high" decoding="async">
-    <div class="hero__scrim" aria-hidden="true"></div>
-
-    <div class="hero__inner">
-      <p class="kicker">PHOTOGRAPHY ARCHIVE — 2026</p>
-      <h1 id="hero-title">把路过的光，<br>留下来。</h1>
-      <p class="hero__dek">2026 年七月与九月。五座城市，两段旅程，一份仍在生长的影像档案。</p>
+  <section class="hero">
+    <div class="wrap hero__top">
+      <div>
+        <div class="hero__meta">
+          <span class="label">Photography Archive</span>
+          <span class="label">— 2026</span>
+        </div>
+        <h1>把路过的光，<br>留下来。</h1>
+      </div>
+      <div class="hero__side">
+        <p>2026 年七月与九月，两次出发。五座城市，三十八个瞬间，五段会动的风景。</p>
+        <dl class="hero__stats">
+          <div><dt>05</dt><dd>CITIES</dd></div>
+          <div><dt>38</dt><dd>FRAMES</dd></div>
+          <div><dt>05</dt><dd>CLIPS</dd></div>
+        </dl>
+      </div>
     </div>
-
-    <div class="hero__foot">
-      <dl class="stats">
-        <div><dt>05</dt><dd>CITIES&nbsp; 城市</dd></div>
-        <span class="stats__rule" aria-hidden="true"></span>
-        <div><dt>38</dt><dd>FRAMES&nbsp; 照片</dd></div>
-        <span class="stats__rule" aria-hidden="true"></span>
-        <div><dt>05</dt><dd>CLIPS&nbsp; 影像</dd></div>
-      </dl>
-      <p class="hero__credit"><span>NO. 01&nbsp; 大理 · 洱海&nbsp; 19:48</span><i aria-hidden="true"></i>SCROLL</p>
-    </div>
+    <figure class="hero__figure" id="heroFig">
+      <img src="assets/images/dali-IMG_1794.jpg" alt="洱海日落，湖面被夕阳染成金色" fetchpriority="high" decoding="async">
+      <figcaption>No. 01 &nbsp; 大理 · 洱海 &nbsp; 19:48</figcaption>
+    </figure>
   </section>
 
-  <!-- 城市索引 -->
-  <section class="index" id="cities" aria-labelledby="index-title">
+  <section class="index" id="cities">
     <div class="wrap">
-      <p class="kicker">INDEX — 城市档案</p>
-      <h2 id="index-title" class="h-lg">五座城市，两段旅程</h2>
-      <p class="dek">2026 年 7 月一路向西，9 月折回海岸。下面按旅程排列，点开城市即进入章节。</p>
+      <div class="index__head">
+        <div>
+          <p class="label">Index — 城市档案</p>
+          <h2>五座城市，<br>两段旅程</h2>
+        </div>
+        <p class="index__note">七月一路向西，九月折回海岸。下面按旅程排列，点开城市即进入章节。</p>
+      </div>
 
-      <div class="city-list">
-        <p class="group">
-          <span class="group__rn">I</span>
-          <span class="group__name">滇西&nbsp;&nbsp;YUNNAN</span>
-          <span class="group__date">2026.07&nbsp; · &nbsp;昆明 → 大理 → 丽江</span>
+      <div class="list">
+        <p class="grp">
+          <span class="grp__rn">I</span>
+          <span class="grp__name">滇西　YUNNAN</span>
+          <span class="grp__date">2026.07 · 昆明 → 大理 → 丽江</span>
         </p>
 
         <a class="city" href="#kunming">
           <span class="city__no">01</span>
           <span class="city__cn">昆明</span>
-          <span class="city__en">KUNMING</span>
           <span class="city__desc">花市的一夜，与一条老街</span>
-          <span class="city__count">05 FRAMES · 01 CLIP</span>
+          <span class="city__count">05 / 01</span>
           <span class="city__thumb"><img src="assets/images/kunming-IMG_1292.jpg" alt="" loading="lazy" decoding="async"></span>
         </a>
 
         <a class="city" href="#dali">
           <span class="city__no">02</span>
           <span class="city__cn">大理</span>
-          <span class="city__en">DALI</span>
-          <span class="city__desc">洱海边的一整天</span>
-          <span class="city__count">14 FRAMES · 02 CLIPS</span>
-          <span class="city__thumb"><img src="assets/images/dali-IMG_1794.jpg" alt="" loading="lazy" decoding="async"></span>
+          <span class="city__desc">洱海边的一整天，从午后到入夜</span>
+          <span class="city__count">13 / 02</span>
+          <span class="city__thumb"><img src="assets/images/dali-IMG_1804.jpg" alt="" loading="lazy" decoding="async"></span>
         </a>
 
         <a class="city" href="#lijiang">
           <span class="city__no">03</span>
           <span class="city__cn">丽江</span>
-          <span class="city__en">LIJIANG</span>
-          <span class="city__desc">雪山、蓝月谷与客栈的窗</span>
-          <span class="city__count">05 FRAMES · 02 CLIPS</span>
+          <span class="city__desc">雪山、蓝月谷，与客栈的窗</span>
+          <span class="city__count">05 / 02</span>
           <span class="city__thumb"><img src="assets/images/lijiang-IMG_1939.jpg" alt="" loading="lazy" decoding="async"></span>
         </a>
 
-        <p class="group">
-          <span class="group__rn">II</span>
-          <span class="group__name">沿海&nbsp;&nbsp;COAST &amp; INLAND</span>
-          <span class="group__date">2026.09 — 11&nbsp; · &nbsp;青岛 → 长沙</span>
+        <p class="grp">
+          <span class="grp__rn">II</span>
+          <span class="grp__name">沿海　COAST &amp; INLAND</span>
+          <span class="grp__date">2026.09 — 11 · 青岛 → 长沙</span>
         </p>
 
         <a class="city" href="#qingdao">
           <span class="city__no">04</span>
           <span class="city__cn">青岛</span>
-          <span class="city__en">QINGDAO</span>
           <span class="city__desc">海岸线，与蓝调时刻的灯</span>
-          <span class="city__count">10 FRAMES</span>
-          <span class="city__thumb"><img src="assets/images/qingdao-IMG_0351.jpg" alt="" loading="lazy" decoding="async"></span>
+          <span class="city__count">10 / —</span>
+          <span class="city__thumb"><img src="assets/images/qingdao-IMG_0355.jpg" alt="" loading="lazy" decoding="async"></span>
         </a>
 
         <a class="city" href="#changsha">
           <span class="city__no">05</span>
           <span class="city__cn">长沙</span>
-          <span class="city__en">CHANGSHA</span>
           <span class="city__desc">湖与城，旧牌坊与新天际线</span>
-          <span class="city__count">04 FRAMES</span>
+          <span class="city__count">04 / —</span>
           <span class="city__thumb"><img src="assets/images/changsha-IMG_0177.jpg" alt="" loading="lazy" decoding="async"></span>
         </a>
       </div>
 
-      <p class="foot-note">
-        <span>光影档案 · 2026&nbsp; 图片版权归作者所有</span>
-        <span>38 FRAMES&nbsp; · &nbsp;05 CLIPS&nbsp; · &nbsp;05 CITIES</span>
+      <p class="index__foot">
+        <span>光影档案 · 2026　图片版权归作者所有</span>
+        <span>38 FRAMES　·　05 CLIPS　·　05 CITIES</span>
       </p>
     </div>
   </section>
 
-  <!-- PART I -->
-  <section class="part" id="part-1" aria-labelledby="part1-title">
+  <section class="part" id="part-1">
     <div class="wrap part__inner">
       <span class="part__rn">I</span>
       <div class="part__text">
-        <h2 id="part1-title">滇西</h2>
-        <p class="part__en">YUNNAN&nbsp; · &nbsp;2026.07</p>
+        <h2>滇西</h2>
+        <p class="part__en">YUNNAN　·　2026.07</p>
         <p class="part__route">昆明 → 大理 → 丽江</p>
       </div>
       <p class="part__quote">七月的滇西是一次没有折返的行程。昆明只是过站，洱海与雪山占了大半篇幅。</p>
     </div>
-    <div class="wrap"><p class="part__tag">PART 01 / 02</p></div>
   </section>
 
-  <!-- 昆明 -->
-  <section class="chapter" id="kunming" data-city="昆明">
+  <!-- ============ 昆明 ============ -->
+  <section class="ch" id="kunming">
     <div class="wrap">
-      <header class="ch-head">
-        <span class="ch-no">01</span>
-        <h2>昆明</h2>
-        <p class="ch-meta">KUNMING&nbsp; · &nbsp;2026.07&nbsp; · &nbsp;05 FRAMES&nbsp; · &nbsp;01 CLIP</p>
-        <p class="ch-desc">花市的一夜，和一条老街的灯。</p>
+      <header class="ch__head reveal">
+        <div>
+          <span class="ch__no">01</span>
+          <h2>昆明</h2>
+          <p class="ch__meta">Kunming · 2026.07 · 05 Frames · 01 Clip</p>
+        </div>
+        <p class="ch__desc">花市的一夜，和一条老街的灯。</p>
       </header>
+    </div>
 
-      <div class="grid g-2v">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.61">
+    <figure class="bleed">
+      <div class="plate__img rv-i">
+        <img src="assets/images/kunming-89.jpg" alt="昆明老街上的店铺灯火，人群在夜色里穿行" loading="lazy" decoding="async">
+      </div>
+      <div class="wrap"><figcaption class="cap"><b>DJI_0089</b> 18:58　老街</figcaption></div>
+    </figure>
+
+    <div class="wrap">
+      <div class="quiet">
+        <figure class="plate reveal" style="--w:322px">
+          <div class="plate__img rv-i">
             <img src="assets/images/kunming-IMG_1310.jpg" alt="夜里花市上成片的粉色玫瑰" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_1310&nbsp; · &nbsp;34mm&nbsp; f/8&nbsp; ISO 8000</figcaption>
+          <figcaption class="cap"><b>IMG_1310</b> 34mm · f/8 · ISO 8000</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.52">
+        <figure class="plate reveal" style="--w:262px">
+          <div class="plate__img rv-i">
             <img src="assets/images/kunming-IMG_1292.jpg" alt="夜色中的紫色玫瑰特写" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_1292&nbsp; · &nbsp;29mm&nbsp; f/6.3&nbsp; ISO 20000</figcaption>
+          <figcaption class="cap"><b>IMG_1292</b> 29mm · f/6.3 · ISO 20000</figcaption>
         </figure>
-      </div>
-
-      <p class="section-tag">
-        <span>昆明老街&nbsp; · &nbsp;OLD STREET</span>
-        <em>从花市出来，又往老街走。</em>
-      </p>
-
-      <div class="grid g-2a">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:0.875">
+        <figure class="plate reveal" style="--w:300px">
+          <div class="plate__img rv-i">
             <img src="assets/images/kunming-87.jpg" alt="暮色中的窄巷，两侧是斑驳的墙面" loading="lazy" decoding="async">
           </div>
-        </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.775">
-            <img src="assets/images/kunming-89.jpg" alt="老街上的店铺灯火与来往人群" loading="lazy" decoding="async">
-          </div>
+          <figcaption class="cap"><b>DJI_0087</b> 18:57</figcaption>
         </figure>
       </div>
-      <p class="caption-line">DJI_0087 / DJI_0089&nbsp; · &nbsp;日落之后半小时</p>
+    </div>
 
-      <div class="grid g-2b">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.71">
+    <div class="wrap">
+      <div class="duo">
+        <figure class="plate reveal">
+          <div class="plate__img rv-i">
             <img src="assets/images/kunming-90.jpg" alt="老街上的鲜花饼铺，木质招牌亮着灯" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>DJI_0090</b> 18:59　鲜花饼铺</figcaption>
         </figure>
-        <figure class="shot clip">
-          <div class="shot__box" style="--ar:1.64">
-            <video class="clip__v" poster="assets/covers/kunming-01.jpg" muted loop playsinline preload="none">
+        <figure class="plate reveal">
+          <div class="clipc rv-i">
+            <video muted loop playsinline preload="none" poster="assets/covers/kunming-01.jpg">
               <source src="assets/videos/kunming-01.mp4" type="video/mp4">
             </video>
-            <span class="clip__play" aria-hidden="true"></span>
-            <span class="clip__cap">CLIP 01&nbsp; · &nbsp;老街&nbsp; · &nbsp;0:05</span>
+            <span class="clipc__tag"><i></i>CLIP 01 · 老街 · 0:05</span>
           </div>
+          <figcaption class="cap"><b>CLIP 01</b> 同一条街，五秒钟</figcaption>
         </figure>
       </div>
-      <p class="caption-line">DJI_0090&nbsp; · &nbsp;18:59&nbsp; &nbsp;/&nbsp; &nbsp;视频为同一条街的十秒</p>
     </div>
   </section>
 
-  <!-- 大理 A -->
-  <section class="chapter" id="dali" data-city="大理">
+  <!-- ============ 大理 ============ -->
+  <section class="ch" id="dali">
     <div class="wrap">
-      <header class="ch-head">
-        <span class="ch-no">02</span>
-        <h2>大理</h2>
-        <p class="ch-meta">DALI&nbsp; · &nbsp;2026.07&nbsp; · &nbsp;14 FRAMES&nbsp; · &nbsp;02 CLIPS</p>
-        <p class="ch-desc">洱海的一天。从午后的积云，到入夜的水面。</p>
+      <header class="ch__head reveal">
+        <div>
+          <span class="ch__no">02</span>
+          <h2>大理</h2>
+          <p class="ch__meta">Dali · 2026.07 · 13 Frames · 02 Clips</p>
+        </div>
+        <p class="ch__desc">洱海边的一整天。从午后的积云，到入夜后只剩一线的天光。</p>
       </header>
+    </div>
 
-      <div class="grid g-1">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:2.4">
-            <img src="assets/images/dali-IMG_1489.jpg" alt="大片绿色草场与低垂的积云，远处是缓山" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_1489&nbsp; · &nbsp;26mm&nbsp; f/11&nbsp; ISO 100</figcaption>
-        </figure>
+    <figure class="bleed">
+      <div class="plate__img rv-i">
+        <img src="assets/images/dali-IMG_1489.jpg" alt="大片绿色草场与低垂的积云，远处是缓山" loading="lazy" decoding="async">
       </div>
+      <div class="wrap"><figcaption class="cap"><b>IMG_1489</b> 26mm · f/11 · ISO 100</figcaption></div>
+    </figure>
 
-      <div class="grid g-2a">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:0.78">
+    <div class="wrap">
+      <div class="quiet">
+        <figure class="plate reveal" style="--w:340px">
+          <div class="plate__img rv-i">
             <img src="assets/images/dali-IMG_1502.jpg" alt="白族民居的檐角向上翘起，衬着蓝天白云" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_1502&nbsp; · &nbsp;23mm&nbsp; f/8</figcaption>
+          <figcaption class="cap"><b>IMG_1502</b> 23mm · f/8</figcaption>
         </figure>
-        <figure class="shot clip">
-          <div class="shot__box" style="--ar:1.78">
-            <video class="clip__v" poster="assets/covers/dali-01.jpg" muted loop playsinline preload="none">
-              <source src="assets/videos/dali-01.mp4" type="video/mp4">
-            </video>
-            <span class="clip__play" aria-hidden="true"></span>
-            <span class="clip__cap">CLIP 02&nbsp; · &nbsp;俯瞰洱海&nbsp; · &nbsp;0:06</span>
+        <figure class="plate reveal" style="--w:430px">
+          <div class="plate__img rv-i">
+            <img src="assets/images/dali-IMG_1530.jpg" alt="土黄色墙面的巷子，头顶是一条蓝天" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_1530</b> 32mm · f/7.1</figcaption>
         </figure>
-      </div>
-
-      <div class="grid g-2v">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.76">
-            <img src="assets/images/dali-IMG_1755.jpg" alt="湖边的木桌上摆着餐盘与饮品，背后是洱海" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_1755&nbsp; · &nbsp;33mm&nbsp; f/11</figcaption>
-        </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.4">
+        <figure class="plate reveal" style="--w:296px">
+          <div class="plate__img rv-i">
             <img src="assets/images/dali-IMG_1778.jpg" alt="一只猫蹲在木头上，身后是深绿色植物" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_1778&nbsp; · &nbsp;45mm&nbsp; f/8</figcaption>
+          <figcaption class="cap"><b>IMG_1778</b> 45mm · f/8</figcaption>
         </figure>
       </div>
+
+      <div class="duo">
+        <figure class="plate reveal">
+          <div class="plate__img rv-i">
+            <img src="assets/images/dali-IMG_1755.jpg" alt="湖边的木桌上摆着餐盘与饮品，背后是洱海" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="cap"><b>IMG_1755</b> 33mm · f/11　湖边的下午</figcaption>
+        </figure>
+        <figure class="plate reveal">
+          <div class="clipc rv-i">
+            <video muted loop playsinline preload="none" poster="assets/covers/dali-01.jpg">
+              <source src="assets/videos/dali-01.mp4" type="video/mp4">
+            </video>
+            <span class="clipc__tag"><i></i>CLIP 02 · 俯瞰洱海 · 0:06</span>
+          </div>
+          <figcaption class="cap"><b>CLIP 02</b> 从高处看整片湖</figcaption>
+        </figure>
+      </div>
+
+      <div class="pull reveal">
+        <p>同一片湖，隔两天，两次暮色。相差三分钟。</p>
+        <cite>19:42 / 19:39</cite>
+      </div>
     </div>
-  </section>
 
-  <!-- 大理 B -->
-  <section class="chapter chapter--cont" data-city="大理">
-    <div class="wrap">
-      <p class="section-tag">
-        <span>黄昏之后&nbsp; · &nbsp;AFTER DUSK</span>
-        <em>同一根枯枝，隔两天，还是同一个时刻。</em>
-      </p>
-
-      <div class="grid g-2">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.5">
+    <div class="bleed">
+      <div class="duo duo--tight" style="margin:0">
+        <figure class="plate reveal">
+          <div class="plate__img rv-i" style="height:clamp(260px,58vh,640px)">
             <img src="assets/images/dali-IMG_1402.jpg" alt="深蓝暮色下的湖面，前景是枯枝剪影" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_1402&nbsp; &nbsp;19:42</figcaption>
+          <figcaption class="cap"><b>IMG_1402</b> 19:42</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.5">
+        <figure class="plate reveal">
+          <div class="plate__img rv-i" style="height:clamp(260px,58vh,640px)">
             <img src="assets/images/dali-IMG_1766.jpg" alt="两天后的同一位置，天色转为粉紫" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_1766&nbsp; &nbsp;19:39</figcaption>
+          <figcaption class="cap"><b>IMG_1766</b> 19:39</figcaption>
         </figure>
       </div>
+    </div>
 
-      <div class="grid g-2a">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:0.78">
+    <div class="wrap">
+      <figure class="plate wide inset">
+        <div class="plate__img rv-i">
+          <img src="assets/images/dali-IMG_1729.jpg" alt="云层裂开一道缝，光斜落在远山上" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="cap"><b>IMG_1729</b> 18mm · f/7.1 · ISO 3200</figcaption>
+      </figure>
+    </div>
+
+    <figure class="bleed">
+      <div class="plate__img rv-i">
+        <img src="assets/images/dali-IMG_1804.jpg" alt="飞檐的剪影之上，是粉紫色的晚云" loading="lazy" decoding="async">
+      </div>
+      <div class="wrap"><figcaption class="cap"><b>IMG_1804</b> 45mm · f/7.1</figcaption></div>
+    </figure>
+
+    <div class="wrap">
+      <div class="quiet">
+        <figure class="plate reveal" style="--w:300px">
+          <div class="plate__img rv-i">
             <img src="assets/images/dali-IMG_1782.jpg" alt="一只黑猫站在石头上，背后是紫粉色暮色湖面" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_1782</b> 45mm · f/8</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.58">
-            <img src="assets/images/dali-IMG_1729.jpg" alt="云层裂开一道缝，光斜落在远山上" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_1729&nbsp; · &nbsp;18mm&nbsp; f/7.1&nbsp; ISO 3200</figcaption>
-        </figure>
-      </div>
-
-      <div class="grid g-2b">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.351">
-            <img src="assets/images/dali-IMG_1804.jpg" alt="飞檐的剪影之上，是粉紫色的晚云" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_1804&nbsp; · &nbsp;45mm&nbsp; f/7.1</figcaption>
-        </figure>
-        <figure class="shot clip">
-          <div class="shot__box" style="--ar:1.299">
-            <video class="clip__v" poster="assets/covers/dali-02.jpg" muted loop playsinline preload="none">
-              <source src="assets/videos/dali-02.mp4" type="video/mp4">
-            </video>
-            <span class="clip__play" aria-hidden="true"></span>
-            <span class="clip__cap">CLIP 03&nbsp; · &nbsp;洱海日落&nbsp; · &nbsp;0:14</span>
-          </div>
-        </figure>
-      </div>
-
-      <div class="grid g-3">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
+        <figure class="plate reveal" style="--w:372px">
+          <div class="plate__img rv-i">
             <img src="assets/images/dali-IMG_1798.jpg" alt="入夜后的云与湖面，只剩一线天光" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_1798</b> 45mm · f/7.1</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
+        <figure class="plate reveal" style="--w:372px">
+          <div class="plate__img rv-i">
             <img src="assets/images/dali-IMG_1828.jpg" alt="夜晚的街道，店铺灯光照在石板路上" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_1828</b> 34mm · f/6.3　20:01</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
+      </div>
+
+      <div class="duo">
+        <figure class="plate reveal">
+          <div class="clipc rv-i">
+            <video muted loop playsinline preload="none" poster="assets/covers/dali-02.jpg">
+              <source src="assets/videos/dali-02.mp4" type="video/mp4">
+            </video>
+            <span class="clipc__tag"><i></i>CLIP 03 · 洱海日落 · 0:14</span>
+          </div>
+          <figcaption class="cap"><b>CLIP 03</b> 栏杆、云，和落下去的那一下</figcaption>
+        </figure>
+        <figure class="plate reveal">
+          <div class="plate__img rv-i">
             <img src="assets/images/dali-IMG_1843.jpg" alt="入夜后深蓝色的湖面与岸线" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_1843</b> 45mm · f/6.3 · ISO 12800　20:10</figcaption>
         </figure>
       </div>
-      <p class="caption-line">IMG_1798&nbsp; / &nbsp;IMG_1828&nbsp; / &nbsp;IMG_1843&nbsp; · &nbsp;20:01 — 20:10</p>
     </div>
   </section>
 
-  <!-- 丽江 A -->
-  <section class="chapter" id="lijiang" data-city="丽江">
+  <!-- ============ 丽江 ============ -->
+  <section class="ch" id="lijiang">
     <div class="wrap">
-      <header class="ch-head">
-        <span class="ch-no">03</span>
-        <h2>丽江</h2>
-        <p class="ch-meta">LIJIANG&nbsp; · &nbsp;2026.07&nbsp; · &nbsp;05 FRAMES&nbsp; · &nbsp;02 CLIPS</p>
-        <p class="ch-desc">玉龙雪山、蓝月谷的水色，还有被雪压住的屋檐。</p>
+      <header class="ch__head reveal">
+        <div>
+          <span class="ch__no">03</span>
+          <h2>丽江</h2>
+          <p class="ch__meta">Lijiang · 2026.07 · 05 Frames · 02 Clips</p>
+        </div>
+        <p class="ch__desc">玉龙雪山、蓝月谷的水色，还有客栈窗边那张没收拾的桌子。</p>
       </header>
+    </div>
 
-      <div class="grid g-2v">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
-            <img src="assets/images/lijiang-IMG_1939.jpg" alt="云雾缠绕的玉龙雪山主峰，山脚是深绿色森林" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_1939&nbsp; · &nbsp;45mm&nbsp; f/14&nbsp; ISO 800</figcaption>
-        </figure>
-        <figure class="shot clip">
-          <div class="shot__box" style="--ar:1.11">
-            <video class="clip__v" poster="assets/covers/lijiang-01.jpg" muted loop playsinline preload="none">
+    <figure class="bleed">
+      <div class="plate__img rv-i">
+        <img src="assets/images/lijiang-IMG_1939.jpg" alt="云雾缠绕的玉龙雪山主峰，山脚是深绿色森林" loading="lazy" decoding="async">
+      </div>
+      <div class="wrap"><figcaption class="cap"><b>IMG_1939</b> 45mm · f/14 · ISO 800</figcaption></div>
+    </figure>
+
+    <div class="wrap">
+      <div class="duo">
+        <figure class="plate reveal">
+          <div class="clipc rv-i">
+            <video muted loop playsinline preload="none" poster="assets/covers/lijiang-01.jpg">
               <source src="assets/videos/lijiang-01.mp4" type="video/mp4">
             </video>
-            <span class="clip__play" aria-hidden="true"></span>
-            <span class="clip__cap">CLIP 04&nbsp; · &nbsp;云过山谷&nbsp; · &nbsp;0:10</span>
+            <span class="clipc__tag"><i></i>CLIP 04 · 云过山谷 · 0:10</span>
           </div>
+          <figcaption class="cap"><b>CLIP 04</b> 云从山谷里流过去</figcaption>
         </figure>
-      </div>
-
-      <div class="grid g-1">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:2.2">
+        <figure class="plate reveal">
+          <div class="plate__img rv-i">
             <img src="assets/images/lijiang-IMG_2067.jpg" alt="蓝月谷青绿色的水面，倒映着枯树与森林" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_2067&nbsp; · &nbsp;28mm&nbsp; f/10&nbsp; ISO 400</figcaption>
+          <figcaption class="cap"><b>IMG_2067</b> 28mm · f/10 · ISO 400　蓝月谷</figcaption>
         </figure>
       </div>
 
-      <div class="grid g-2">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.51">
+      <div class="quiet">
+        <figure class="plate reveal" style="--w:346px">
+          <div class="plate__img rv-i">
             <img src="assets/images/lijiang-IMG_2108.jpg" alt="雪山之下，老屋的飞檐层层叠起" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_2108&nbsp; · &nbsp;45mm&nbsp; f/11</figcaption>
+          <figcaption class="cap"><b>IMG_2108</b> 45mm · f/11</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.51">
+        <figure class="plate reveal" style="--w:346px">
+          <div class="plate__img rv-i">
             <img src="assets/images/lijiang-IMG_2119.jpg" alt="老街上的红伞与远处雪山同框" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_2119&nbsp; · &nbsp;45mm&nbsp; f/9</figcaption>
+          <figcaption class="cap"><b>IMG_2119</b> 45mm · f/9</figcaption>
         </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- 丽江 B -->
-  <section class="chapter chapter--cont" data-city="丽江">
-    <div class="wrap">
-      <p class="section-tag">
-        <span>客栈的窗&nbsp; · &nbsp;GUESTHOUSE</span>
-        <em>晚上九点，窗外的树还亮着。</em>
-      </p>
-
-      <div class="grid g-2v">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.61">
+        <figure class="plate reveal" style="--w:392px">
+          <div class="plate__img rv-i">
             <img src="assets/images/lijiang-IMG_1924.jpg" alt="客栈窗边的木桌，窗外是蓝调的树木与天光" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_1924&nbsp; · &nbsp;18mm&nbsp; f/14&nbsp; ISO 25600</figcaption>
-        </figure>
-        <figure class="shot clip">
-          <div class="shot__box" style="--ar:1.16">
-            <video class="clip__v" poster="assets/covers/lijiang-02.jpg" muted loop playsinline preload="none">
-              <source src="assets/videos/lijiang-02.mp4" type="video/mp4">
-            </video>
-            <span class="clip__play" aria-hidden="true"></span>
-            <span class="clip__cap">CLIP 05&nbsp; · &nbsp;云影草甸&nbsp; · &nbsp;0:14</span>
-          </div>
+          <figcaption class="cap"><b>IMG_1924</b> 18mm · f/14 · ISO 25600</figcaption>
         </figure>
       </div>
       <p class="note">窗框是木头的，玻璃上有一半是山。这一张用了 ISO 25600，颗粒都在。</p>
     </div>
   </section>
 
-  <!-- PART II -->
-  <section class="part" id="part-2" aria-labelledby="part2-title">
+  <section class="part" id="part-2">
     <div class="wrap part__inner">
       <span class="part__rn">II</span>
       <div class="part__text">
-        <h2 id="part2-title">沿海</h2>
-        <p class="part__en">COAST &amp; INLAND&nbsp; · &nbsp;2026.09 — 11</p>
+        <h2>沿海</h2>
+        <p class="part__en">COAST &amp; INLAND　·　2026.09 — 11</p>
         <p class="part__route">青岛 → 长沙</p>
       </div>
       <p class="part__quote">九月去青岛拍夏天的尾巴，十一月又回去拍秋末。长沙夹在中间，只有一天。</p>
     </div>
-    <div class="wrap"><p class="part__tag">PART 02 / 02</p></div>
   </section>
 
-  <!-- 青岛 A -->
-  <section class="chapter" id="qingdao" data-city="青岛">
+  <!-- ============ 青岛 ============ -->
+  <section class="ch" id="qingdao">
     <div class="wrap">
-      <header class="ch-head">
-        <span class="ch-no">04</span>
-        <h2>青岛</h2>
-        <p class="ch-meta">QINGDAO&nbsp; · &nbsp;2026.09 / 11&nbsp; · &nbsp;10 FRAMES</p>
-        <p class="ch-desc">海岸线，与一天里最好的那两个小时。</p>
+      <header class="ch__head reveal">
+        <div>
+          <span class="ch__no">04</span>
+          <h2>青岛</h2>
+          <p class="ch__meta">Qingdao · 2026.09 / 11 · 10 Frames</p>
+        </div>
+        <p class="ch__desc">海岸线，与一天里最好的那两个小时。</p>
       </header>
+    </div>
 
-      <div class="grid g-1">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:2.09">
-            <img src="assets/images/qingdao-IMG_0109.jpg" alt="蓝天白云下的现代高楼群，天上有风筝" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_0109&nbsp; · &nbsp;27mm&nbsp; f/11&nbsp; ISO 100</figcaption>
-        </figure>
+    <figure class="bleed">
+      <div class="plate__img rv-i">
+        <img src="assets/images/qingdao-IMG_0109.jpg" alt="蓝天白云下的现代高楼群，天上有风筝" loading="lazy" decoding="async">
       </div>
+      <div class="wrap"><figcaption class="cap"><b>IMG_0109</b> 27mm · f/11 · ISO 100</figcaption></div>
+    </figure>
 
-      <div class="grid g-2">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.47">
+    <div class="wrap">
+      <div class="quiet">
+        <figure class="plate reveal" style="--w:360px">
+          <div class="plate__img rv-i">
             <img src="assets/images/qingdao-IMG_0122.jpg" alt="延伸入海的长堤与尽头的灯塔" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_0122&nbsp; · &nbsp;33mm&nbsp; f/11</figcaption>
+          <figcaption class="cap"><b>IMG_0122</b> 33mm · f/11</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.47">
+        <figure class="plate reveal" style="--w:360px">
+          <div class="plate__img rv-i">
             <img src="assets/images/qingdao-IMG_0320.jpg" alt="一栋高塔立在楼群之间，背景是海面" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_0320&nbsp; · &nbsp;27mm&nbsp; f/8</figcaption>
+          <figcaption class="cap"><b>IMG_0320</b> 27mm · f/8</figcaption>
         </figure>
-      </div>
-
-      <div class="grid g-2">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
+        <figure class="plate reveal" style="--w:300px">
+          <div class="plate__img rv-i">
             <img src="assets/images/qingdao-IMG_0071.jpg" alt="暮色里的海边草坡，远处是淡淡的山影" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_0071&nbsp; · &nbsp;32mm&nbsp; f/5.6</figcaption>
+          <figcaption class="cap"><b>IMG_0071</b> 32mm · f/5.6</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
-            <img src="assets/images/qingdao-IMG_0075.jpg" alt="几乎全黑的远山剪影" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_0075&nbsp; · &nbsp;45mm&nbsp; f/6.3</figcaption>
-        </figure>
+      </div>
+
+      <div class="pull reveal">
+        <p>日落后二十分钟，天最蓝，灯刚亮。</p>
+        <cite>相隔 22 秒的两张</cite>
       </div>
     </div>
-  </section>
 
-  <!-- 青岛 B -->
-  <section class="chapter chapter--cont" data-city="青岛">
-    <div class="wrap">
-      <p class="section-tag">
-        <span>蓝调时刻&nbsp; · &nbsp;BLUE HOUR</span>
-        <em>日落后二十分钟，天最蓝，灯刚亮。</em>
-      </p>
-
-      <div class="grid g-1">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:2.31">
-            <img src="assets/images/qingdao-IMG_0136.jpg" alt="夜晚的橱窗与街道，车灯拉成光轨" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_0136&nbsp; · &nbsp;18mm&nbsp; f/4.5&nbsp; ISO 100</figcaption>
-        </figure>
-      </div>
-
-      <div class="grid g-2a">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:0.95">
-            <img src="assets/images/qingdao-IMG_0328.jpg" alt="蓝调时刻的海岸线与石灯笼" loading="lazy" decoding="async">
-          </div>
-        </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.94">
-            <img src="assets/images/qingdao-IMG_0329.jpg" alt="露台上的灯串与远处城市灯火" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_0328 / IMG_0329&nbsp; · &nbsp;18mm&nbsp; f/4.5&nbsp; ISO 200</figcaption>
-        </figure>
-      </div>
-
-      <div class="grid g-2">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
+    <div class="bleed">
+      <div class="duo duo--tight" style="margin:0">
+        <figure class="plate reveal">
+          <div class="plate__img rv-i" style="height:clamp(240px,54vh,560px)">
             <img src="assets/images/qingdao-IMG_0351.jpg" alt="栈道的红色栏杆与一盏暖黄路灯，远处是黄昏天际线" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_0351&nbsp; · &nbsp;41mm&nbsp; f/6.3&nbsp; ISO 3200</figcaption>
+          <figcaption class="cap"><b>IMG_0351</b> 17:12:40</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.54">
+        <figure class="plate reveal">
+          <div class="plate__img rv-i" style="height:clamp(240px,54vh,560px)">
             <img src="assets/images/qingdao-IMG_0355.jpg" alt="同一位置，多了一个凭栏望向对岸的人" loading="lazy" decoding="async">
           </div>
-          <figcaption>IMG_0355&nbsp; · &nbsp;41mm&nbsp; f/6.3&nbsp; ISO 640&nbsp; &nbsp;/&nbsp; &nbsp;相隔 22 秒</figcaption>
+          <figcaption class="cap"><b>IMG_0355</b> 17:13:02</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="quiet">
+        <figure class="plate reveal" style="--w:384px">
+          <div class="plate__img rv-i">
+            <img src="assets/images/qingdao-IMG_0136.jpg" alt="夜晚的橱窗与街道，车灯拉成光轨" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="cap"><b>IMG_0136</b> 18mm · f/4.5 · ISO 100　19:26</figcaption>
+        </figure>
+        <figure class="plate reveal" style="--w:262px">
+          <div class="plate__img rv-i">
+            <img src="assets/images/qingdao-IMG_0328.jpg" alt="蓝调时刻的海岸线与石灯笼" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="cap"><b>IMG_0328</b> 18mm · f/4.5</figcaption>
+        </figure>
+        <figure class="plate reveal" style="--w:318px">
+          <div class="plate__img rv-i">
+            <img src="assets/images/qingdao-IMG_0329.jpg" alt="露台上的灯串与远处城市灯火" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="cap"><b>IMG_0329</b> 18mm · f/4.5　同一分钟</figcaption>
+        </figure>
+        <figure class="plate reveal" style="--w:202px">
+          <div class="plate__img rv-i">
+            <img src="assets/images/qingdao-IMG_0075.jpg" alt="几乎全黑的远山剪影" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="cap"><b>IMG_0075</b> 45mm · f/6.3</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
-  <!-- 长沙 -->
-  <section class="chapter" id="changsha" data-city="长沙">
+  <!-- ============ 长沙 ============ -->
+  <section class="ch" id="changsha">
     <div class="wrap">
-      <header class="ch-head">
-        <span class="ch-no">05</span>
-        <h2>长沙</h2>
-        <p class="ch-meta">CHANGSHA&nbsp; · &nbsp;2026.09&nbsp; · &nbsp;04 FRAMES</p>
-        <p class="ch-desc">湖与城，旧牌坊与新天际线。只待了一个下午。</p>
+      <header class="ch__head reveal">
+        <div>
+          <span class="ch__no">05</span>
+          <h2>长沙</h2>
+          <p class="ch__meta">Changsha · 2026.09 · 04 Frames</p>
+        </div>
+        <p class="ch__desc">湖与城，旧牌坊与新天际线。只待了一个下午。</p>
       </header>
+    </div>
 
-      <div class="grid g-1">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:2.09">
-            <img src="assets/images/changsha-IMG_0177.jpg" alt="彩绘的中式牌坊，前景有游人与车辆" loading="lazy" decoding="async">
-          </div>
-          <figcaption>IMG_0177&nbsp; · &nbsp;45mm&nbsp; f/6.3&nbsp; ISO 200&nbsp; · &nbsp;12:10</figcaption>
-        </figure>
+    <figure class="bleed">
+      <div class="plate__img rv-i">
+        <img src="assets/images/changsha-IMG_0177.jpg" alt="彩绘的中式牌坊，前景有游人与车辆" loading="lazy" decoding="async">
       </div>
+      <div class="wrap"><figcaption class="cap"><b>IMG_0177</b> 45mm · f/6.3 · ISO 200　12:10</figcaption></div>
+    </figure>
 
-      <div class="grid g-3">
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.39">
+    <div class="wrap">
+      <div class="quiet">
+        <figure class="plate reveal" style="--w:388px">
+          <div class="plate__img rv-i">
             <img src="assets/images/changsha-IMG_0199.jpg" alt="隔着湖面望向城市天际线，远处有古典楼阁" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_0199</b> 45mm · f/6.3　16:49</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.39">
+        <figure class="plate reveal" style="--w:340px">
+          <div class="plate__img rv-i">
             <img src="assets/images/changsha-IMG_0202.jpg" alt="柳枝垂在湖面上，远处是模糊的城市" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_0202</b> 18mm · f/4.5　16:53</figcaption>
         </figure>
-        <figure class="shot">
-          <div class="shot__box" style="--ar:1.39">
+        <figure class="plate reveal" style="--w:300px">
+          <div class="plate__img rv-i">
             <img src="assets/images/changsha-IMG_0205.jpg" alt="浓密树荫下的一角水面" loading="lazy" decoding="async">
           </div>
+          <figcaption class="cap"><b>IMG_0205</b> 18mm · f/4.5　16:55</figcaption>
         </figure>
       </div>
-      <p class="caption-line">IMG_0199&nbsp; / &nbsp;IMG_0202&nbsp; / &nbsp;IMG_0205&nbsp; · &nbsp;16:49 — 16:55</p>
     </div>
   </section>
 
-  <!-- 关于 -->
-  <section class="about" id="about" aria-labelledby="about-title">
+  <!-- ============ 关于 ============ -->
+  <section class="about" id="about">
     <div class="wrap about__inner">
       <div class="about__text">
-        <p class="kicker">ABOUT — 关于</p>
-        <h2 id="about-title" class="h-md">关于这份档案</h2>
+        <p class="label">About — 关于</p>
+        <h2>关于这份档案</h2>
         <p>这是一份私人影像档案。照片按旅程和城市归档，不做主题先行，只记录愿意停下来的那一刻。</p>
         <p>器材只有一台 Canon EOS R50 和套机镜头，偶尔用无人机。原始文件留在本地，这里放的是压缩后的版本。</p>
         <p>所有影像均为原创，转载或使用请先联系。</p>
-        <p class="about__contact">CONTACT&nbsp; / &nbsp;<a href="mailto:hello@light.archive">hello@light.archive</a></p>
+        <p class="about__contact">CONTACT　/　<a href="mailto:hello@light.archive">hello@light.archive</a></p>
       </div>
-      <figure class="about__photo">
+      <figure class="about__photo rv-i">
         <img src="assets/images/qingdao-IMG_0355.jpg" alt="一个人倚在栏杆边，望向对岸的城市灯火" loading="lazy" decoding="async">
       </figure>
     </div>
@@ -591,7 +579,7 @@
 
 <footer class="foot">
   <div class="wrap">
-    <div class="foot__rule" aria-hidden="true"></div>
+    <div class="foot__rule"></div>
     <div class="foot__row">
       <div class="foot__brand">
         <span class="foot__cn">光影档案</span>
@@ -603,15 +591,15 @@
         <a href="#top">回到顶部</a>
       </nav>
     </div>
-    <p class="foot__cr">2026 光影档案&nbsp; &nbsp;图片版权归作者所有&nbsp; &nbsp;38 FRAMES · 05 CLIPS · 05 CITIES</p>
+    <p class="foot__cr">2026 光影档案　图片版权归作者所有　38 FRAMES · 05 CLIPS · 05 CITIES</p>
   </div>
 </footer>
 
 <div class="lb" id="lb" hidden>
-  <button class="lb__close" type="button" aria-label="关闭">关闭</button>
-  <button class="lb__nav lb__nav--prev" type="button" aria-label="上一张">上一张</button>
+  <button class="lb__close" type="button">关闭</button>
+  <button class="lb__nav lb__nav--prev" type="button">上一张</button>
   <img id="lb-img" src="" alt="">
-  <button class="lb__nav lb__nav--next" type="button" aria-label="下一张">下一张</button>
+  <button class="lb__nav lb__nav--next" type="button">下一张</button>
   <p class="lb__cap" id="lb-cap"></p>
 </div>
 
